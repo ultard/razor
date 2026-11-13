@@ -1,4 +1,3 @@
-// Prints razor.md as extra context for the hook event named in the first argument.
 const fs = require('fs');
 const path = require('path');
 

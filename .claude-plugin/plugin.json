@@ -1,6 +1,0 @@
-{
-  "name": "razor",
-  "version": "0.1.0",
-  "description": "Skills that make models write less and better.",
-  "hooks": "./hooks/hooks.json"
-}
