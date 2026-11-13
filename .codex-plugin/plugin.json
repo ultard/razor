@@ -1,7 +1,7 @@
 {
   "name": "razor",
   "version": "0.1.0",
-  "description": "Skills that make models write less and better: code, review, docs, commits, writing.",
+  "description": "Skills that make models write less and better.",
   "skills": "./skills/",
   "hooks": "./hooks/hooks.json"
 }
