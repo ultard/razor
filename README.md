@@ -19,4 +19,11 @@ Install in Claude Code:
 /plugin install razor@razor
 ```
 
-The Codex manifest is in `.codex-plugin`, but Codex support hasn't been tested yet.
+Install in Codex:
+
+```
+codex plugin marketplace add ultard/razor
+codex plugin add razor@razor
+```
+
+In Codex the skills work, but the hook may not run until you approve it.
