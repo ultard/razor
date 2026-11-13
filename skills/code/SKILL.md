@@ -1,6 +1,6 @@
 ---
 name: code
-description: Use on any coding task.
+description: Use when writing, changing, fixing or refactoring code in any language.
 ---
 
 # Code
@@ -30,6 +30,8 @@ Take the first option that fully works:
 - Boring code over clever code. A one-liner that needs decoding is not short.
 - Bug fix: grep every caller of the function first, then fix the root cause once in the shared code.
 - Moved or merged code keeps its error handling and validation.
+- No silent catch. Never swallow an error with an empty catch or a bare log. Catch only where you can handle it, otherwise let it propagate. Don't catch just to rethrow.
+- Don't silence the type checker or linter. No `any`, casts or ignore comments to make an error go away. Fix the type or the code instead.
 - Between options of equal size, take the one that is correct on edge cases.
 - New non-trivial logic (a branch, a loop, a parser, money or security, a new script) gets one small test or assert-based check. Trivial changes need none.
 - Comment only the why the code can't show, in one line.
@@ -42,7 +44,10 @@ Never cut validation at trust boundaries, error handling that prevents data loss
 The project's formatter, linter and existing style win over these rules.
 
 - **Full names.** Write `user`, `count`, `response`, not `usr`, `cnt`, `resp`. Common terms like `id`, `url` or `html` stay as they are.
-- **Name big conditions.** If a condition doesn't read at a glance, move it into a variable or function with a clear name and use that in the `if`. A short `a && b` stays inline.
+- **Booleans read as questions.** Name them `isActive`, `hasAccess`, `canEdit`, not `active`, `access`, `edit`. Use the language's casing.
+- **Name big conditions.** If a condition doesn't read at a glance, split it into named parts and combine them in the `if`. Each part is one simple check. If the condition is used in more than one place, or has more than three parts, move it into a function with early returns. A short `a && b` stays inline.
+- **One ternary, no nesting.** A ternary picks between two simple values. Never nest one inside another. For three or more cases, use a lookup object or a function with early returns.
+- **Compute before the call.** An argument that needs a condition or more than one step goes into a named variable first.
 - **Shallow nesting.** No more than two or three levels. Use early returns, guard clauses and `continue` instead of nested `if`s.
 - **Split by responsibility.** Put unrelated parts in separate files or modules. Don't create a file for a few lines that only one place uses.
 - **Blank lines between blocks.** Separate logical steps of a function with one blank line: input checks, the work, the result.

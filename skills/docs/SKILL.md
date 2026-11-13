@@ -1,6 +1,6 @@
 ---
 name: docs
-description: Use when writing docs, README, docstrings, comments or changelogs.
+description: Use when writing or editing a README, guide, API reference, docstring, comment or changelog.
 ---
 
 # Docs

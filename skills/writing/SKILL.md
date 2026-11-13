@@ -1,6 +1,6 @@
 ---
 name: writing
-description: Use when writing or editing text for people.
+description: Use when writing or editing any text a person reads: replies, messages, docs, pull requests.
 ---
 
 # Writing
@@ -40,6 +40,11 @@ Each rule describes what a phrase does, not which words it uses. Find the same p
 - **Capitalized headings.** Use sentence case or the language's own rules.
 - **Decorative emojis.** Remove from headings and bullets.
 - **Quotes.** One quote style in prose, straight quotes in code.
+
+### Replies
+
+- **Answer first.** Then details. Don't restate the question, don't end with a summary that repeats the answer.
+- **No structure in short replies.** A short reply has no headings. Use a list only for separate items.
 
 ### Communication artifacts
 

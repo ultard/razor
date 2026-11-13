@@ -1,6 +1,6 @@
 ---
 name: commits
-description: Use when writing commits or pull requests.
+description: Use when writing commit messages, pull request titles or descriptions.
 ---
 
 # Commits and pull requests

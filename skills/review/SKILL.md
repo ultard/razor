@@ -1,6 +1,6 @@
 ---
 name: review
-description: Use when asked to review or audit code or a repository.
+description: Use when asked to review or audit code, a diff, a pull request or a repository.
 ---
 
 # Review
@@ -24,6 +24,7 @@ In both cases trace the real flow: where data comes in, what is stored, what goe
 - **Scale.** Fine for one user, wrong for many: check-then-write races, the same work done by every process, memory that only grows, a query per item, O(n^2) on big input.
 - **Missing test.** Risky logic (a branch, a parser, money, security, data writes, a bug fix) with no test that fails when it breaks. One good test, not coverage.
 - **Speed.** Big slowdowns are problems. Small wins are suggestions.
+- **Formatting.** Code that breaks the code skill's formatting rules (nested ternaries, deep nesting, unnamed big conditions) when the project's linter doesn't catch it. Goes under Nice to have.
 - **Lean.** Dead code, unused options and config, speculative features. A helper the repository already has. What the standard library or platform already does, or a dependency for a few lines. An interface with one implementation, a wrapper that only passes calls through. Near-copies that must change together. A function doing several unrelated jobs: split by job, never by line count.
 
 ## Check before you report
