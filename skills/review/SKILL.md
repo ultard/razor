@@ -5,7 +5,7 @@ description: Use when asked to review or audit code, a diff, a pull request or a
 
 # Review
 
-Review like the developer who gets paged when it breaks. Order of importance: correct, safe, holds under load, tested, fast, lean. This is a report the user asked for, so give it in full. Don't change any code.
+Find what breaks in production, in this order of importance: correct, safe, holds under load, tested, fast, lean. Give the report in full. Don't change any code.
 
 ## What to review
 
@@ -33,7 +33,7 @@ In both cases trace the real flow: where data comes in, what is stored, what goe
 - Re-read the lines. Confirm the caller exists, the value can be empty, the code is unused. Before calling code unused, grep the whole tree, including tests, config and string references.
 - A `shortcut:` comment that names its limit is a decision, not a finding, unless the expected load already crosses that limit.
 - Propose the smallest fix that works. Prefer fixes that delete code.
-- No style taste, no "consider", no vague worries.
+- No style taste and no "consider".
 
 ## Output
 

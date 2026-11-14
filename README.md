@@ -8,6 +8,7 @@ A plugin for Claude Code and Codex with skills that stop models from writing mor
 - `review` finds bugs, risks and code that can go.
 - `docs` writes short docs.
 - `commits` matches the repository's commit style.
+- `interface` designs and builds interfaces that fit the product.
 - `writing` removes AI patterns from any text.
 
 A hook adds a short guide at the start of each session and each subagent, so the model knows which skill to load. The hook needs Node.js.

@@ -5,12 +5,12 @@ description: Use when writing, changing or fixing tests in any language.
 
 # Tests
 
-A test proves one behavior works and fails when it breaks. Write the fewest tests that catch real bugs.
+Write the fewest tests that catch real bugs. Each one checks one behavior and fails when that behavior breaks.
 
 ## Before you write
 
 - Find the project's test framework, folders, naming and helpers. Write tests the same way.
-- Name the behavior to check in one sentence. If you can't, you don't know what to test yet.
+- Name the behavior to check in one sentence. If you can't, read the code and the task again before writing a test.
 - Run the existing tests first, so you know which failures were already there.
 
 ## Rules

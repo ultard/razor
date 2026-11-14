@@ -15,7 +15,7 @@ A commit message and a pull request say what changed and why. The diff already s
 
 ## Commits
 
-- **One change per commit.** Don't mix unrelated files in one commit.
+- **One change per commit.** Unrelated files go in separate commits.
 - **Subject.** What changed, up to about 72 characters. No period at the end.
 - **Body.** Only when the reason isn't obvious from the subject. Say why, not which files changed.
 - **Basic punctuation.** No emojis, no decorative symbols.
