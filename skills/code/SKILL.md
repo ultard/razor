@@ -50,6 +50,7 @@ The project's formatter, linter and existing style win over these rules.
 - **Compute before the call.** An argument that needs a condition or more than one step goes into a named variable first.
 - **Shallow nesting.** No more than two or three levels. Use early returns, guard clauses and `continue` instead of nested `if`s.
 - **Split by responsibility.** Put unrelated parts in separate files or modules. Don't create a file for a few lines that only one place uses.
-- **Blank lines between blocks.** Separate logical steps of a function with one blank line: input checks, the work, the result.
+- **Blank lines between logical groups.** Keep related properties, local declarations and assignments together. Separate groups with one blank line when their purpose changes, even within a declaration list or a run of assignments. In a function, separate setup, validation, loops, conditionals and the final return where they form distinct steps; don't put a blank line between every statement.
+- **Space between declarations.** Use one blank line between functions, initializers and nested types, and between stored properties and an initializer. No blank line just inside an opening or closing brace.
 - **Expand big literals.** An object, array, call or type that doesn't fit on one line gets one item per line.
 - **Group imports.** Where the language allows: standard library, then external packages, then project modules, with a blank line between groups.

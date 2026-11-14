@@ -16,7 +16,8 @@ Documentation helps the reader install, run, call or fix something. Write the le
 
 ## Content
 
-- **Start with what it is.** One plain sentence, then the shortest working example if there is one. No "Overview" that restates the title.
+- **Start with what it is.** One plain sentence. No "Overview" that restates the title.
+- **Code examples only when necessary.** Default to prose. Include a code example only when the user explicitly asks for one or the reader cannot reliably complete the task without it. Keep it to the smallest working example.
 - **Short descriptions.** Describe an option, function, command or item in one sentence. Put details below, and only if the reader needs them.
 - **No feature list.** Show a feature in an example or state it with a number.
 - **No empty sections.** No Contributing, Support, Roadmap, FAQ or similar without real content. A license is one line with a link.
