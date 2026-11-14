@@ -1,6 +1,6 @@
 ---
 name: docs
-description: Use when writing or editing a README, guide, API reference, docstring, comment or changelog.
+description: Use when writing or editing a README, guide, spec, requirements, API reference, docstring, comment or changelog.
 ---
 
 # Docs
@@ -12,7 +12,7 @@ A doc exists for a reader who has to do something: install, run, call, fix or de
 - **Write only what was asked.** A request for a README is one README. Don't add guides, architecture pages or a docs folder nobody asked for. A code task produces no new docs; it only fixes the docs the change made wrong.
 - **Name the reader and their task first.** One sentence, such as "someone who wants to link this library into their app". If you can't name the task, there is nothing to write.
 - **Test each sentence.** Ask what the reader does differently after reading it. If the answer is nothing, delete it.
-- **Document what exists.** No target state, no plans, no "not wired up yet", no "draft". If only part works, describe that part.
+- **Document what exists.** No target state, no plans, no "not wired up yet", no "draft". If only part works, describe that part. A spec is the exception: it describes the agreed target, and nothing beyond it.
 - **Don't retell the code.** A list of modules, types or files with a phrase next to each repeats what the reader sees in the tree and goes stale on the next rename. Write what the code can't show: what it is for, how to start, what breaks.
 - **Start with what it is.** One sentence a newcomer understands. The rest follows the order in which the reader needs it.
 - **No empty sections.** No Contributing, Support, Roadmap or FAQ without real content. A license is one line with a link.
@@ -60,6 +60,16 @@ Format to help the reader find or copy something.
 - **Code blocks.** For anything the reader copies, with the language set. Inline code for file, function, flag and value names.
 - **Callouts.** A warning block only for something that loses data or breaks things. No horizontal lines, no badge walls, no table of contents in a short doc.
 
+## Specs and requirements
+
+A spec tells the people who build a product what it must do. The reader is the developer or agent who implements it.
+
+- **Keep to the scope the user set.** If they asked for behavior, describe who can do what and what the system does in response. Leave out screens, layout, sections, components and their placement. Describe the interface only when the user asks for it.
+- **One shape for every page.** Before the first page of a set, settle its sections, such as Access, Functions and Interactions, and use them on every page in the same order. If the user gave sections, use theirs. A page with more content gets more items in the same sections, not new subsections or a table.
+- **One level of detail.** Each function is one or two sentences: who acts, what they do, what the system does, what limits it. Don't describe one page field by field and the next one in headings. After the first page, compare each new one with it.
+- **Requirements come from the source.** A rule, limit, field or status that is not in the user's words or materials is a question, not a requirement. List those questions in the reply and leave them out of the spec.
+- **Check technical rules before writing them.** A rule about the stack, styling or security goes into the spec only after you check it against the project's security needs and the tool's docs. Writing a convenient practice down as a rule makes every later implementation repeat the mistake.
+
 ## Code comments and docstrings
 
 - Comment why, not what. Write a comment only when the reason isn't visible in the code.
@@ -76,3 +86,4 @@ Write what changed for the user and what they must do to upgrade. Skip refactors
 - The doc is within its size limit.
 - Nothing describes status, plans or history.
 - Every command was run or matches the code.
+- In a spec, every page has the same sections and level of detail, and nothing goes past the scope the user set.

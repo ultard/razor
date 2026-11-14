@@ -6,7 +6,7 @@ A plugin for Claude Code and Codex with skills that stop models from writing mor
 - `tests` writes tests that catch real bugs.
 - `debug` finds the cause of a bug before fixing it.
 - `review` finds bugs, risks and code that can go.
-- `docs` writes short docs.
+- `docs` writes short docs and specs with the same shape on every page.
 - `commits` matches the repository's commit style.
 - `interface` designs and builds interfaces that fit the product.
 - `writing` removes AI patterns from any text.
