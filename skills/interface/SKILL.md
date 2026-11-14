@@ -32,6 +32,8 @@ Mark each value as measured or estimated.
 
 ## 4. Design
 
+Read [slop.md](slop.md) before composing the screen. Use it to leave out decorative numbering, redundant labels and invented status text.
+
 - Start from the product: who uses the screen, what content it has, what the main action is.
 - Tell the user the direction in two or three sentences, then build. Don't wait for approval.
 - Don't fall back on the stock landing page: centered headline, gradient, floating mockup, three identical cards. Use these only when the content calls for them.
@@ -43,6 +45,7 @@ Follow [rules.md](rules.md): layout, type, color, surfaces, motion, controls and
 
 ## 6. Check
 
+- Apply the removal pass in [slop.md](slop.md) to the rendered screen.
 - Render the result at desktop width and at 390px. Screenshot it and compare with the reference element by element. "Gap is 12px, reference has 16px" is a finding. "Feels tight" is not.
 - Capture your animation the same way you captured the reference and compare it with your motion line.
 - Walk the states: hover, focus, pressed, disabled, empty, loading, error. Tab through the screen without a mouse.
