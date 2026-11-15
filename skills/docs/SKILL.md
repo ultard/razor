@@ -5,20 +5,25 @@ description: Use when writing or editing a README, guide, spec, requirements, AP
 
 # Docs
 
-A doc exists for a reader who has to do something: install, run, call, fix or decide. A sentence that doesn't help them do it is deleted, even when it is true. The writing skill covers sentences; this one covers what goes into a doc, where each fact belongs and how the page looks.
+A doc exists for a reader who has to do something: install, run, call, fix or decide. A sentence that doesn't help them do it is deleted, even when it is true. The writing skill covers sentences. This one covers what goes into a doc, where each fact belongs and how the page looks.
+
+## Before you write
+
+- **Name the reader and their task** in one sentence, such as "someone who wants to link this library into their app". If you can't name the task, there is nothing to write.
+- **Read the code.** Every command, flag, default and output in the doc must exist there.
+- **Run what you can.** Don't claim a command works if you didn't run it.
 
 ## What to write
 
 - **Write only what was asked.** A request for a README is one README. Don't add guides, architecture pages or a docs folder nobody asked for. A code task produces no new docs; it only fixes the docs the change made wrong.
-- **Name the reader and their task first.** One sentence, such as "someone who wants to link this library into their app". If you can't name the task, there is nothing to write.
 - **Test each sentence.** Ask what the reader does differently after reading it. If the answer is nothing, delete it.
 - **Document what exists.** No target state, no plans, no "not wired up yet", no "draft". If only part works, describe that part. A spec is the exception: it describes the agreed target, and nothing beyond it.
 - **Don't retell the code.** A list of modules, types or files with a phrase next to each repeats what the reader sees in the tree and goes stale on the next rename. Write what the code can't show: what it is for, how to start, what breaks.
-- **Start with what it is.** One sentence a newcomer understands. The rest follows the order in which the reader needs it.
+- **Start with what it is.** One paragraph that a reader who has never opened the code understands. The rest follows the order in which the reader needs it. Explain a term where it first appears, or don't use it.
 - **No empty sections.** No Contributing, Support, Roadmap or FAQ without real content. A license is one line with a link.
 - **One way to do it.** Show the main install method, not every package manager.
 - **Say it once.** Link instead of repeating. Edit an existing page instead of writing a second one on the same topic.
-- **Define ambiguous terms.** When related concepts are easy to confuse, define their terms in a glossary and use them consistently in prose, diagrams, examples and alias placeholders. Reuse an existing glossary; otherwise put it in the document. Give different structural levels distinct names.
+- **Define terms that are easy to confuse.** Put them in a glossary and use them the same way in prose, diagrams, examples and alias placeholders. Reuse an existing glossary; otherwise put it in the document. Give different structural levels distinct names.
 
 ## Where each fact goes
 
@@ -39,13 +44,7 @@ A README doesn't describe the API. It links to it.
 
 - A package README fits on one screen. A project README fits on two. A guide covers one task.
 - When a draft is over the limit, remove facts. Don't pack the same facts into fewer words.
-- A reader who has never opened the code must understand the first paragraph. Explain a term where it first appears, or don't use it.
 - A paragraph has up to three sentences about one thing. A paragraph of unrelated facts is reference material, and it goes to the docstrings.
-
-## Before you write
-
-- Read the code. Every command, flag, default and output in the doc must exist there.
-- Run what you can. Don't claim a command works if you didn't run it.
 
 ## Code examples
 
@@ -87,5 +86,5 @@ Write what changed for the user and what they must do to upgrade. Skip refactors
 - The doc is within its size limit.
 - Nothing describes status, plans or history.
 - Every command was run or matches the code.
-- Each concept has one term throughout the document set, including diagrams, examples and alias placeholders; each term has one meaning.
+- Each concept has one term across the document set, and each term has one meaning.
 - In a spec, every page has the same sections and level of detail, and nothing goes past the scope the user set.

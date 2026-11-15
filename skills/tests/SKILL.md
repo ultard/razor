@@ -23,9 +23,9 @@ Write the fewest tests that catch real bugs. Each one checks one behavior and fa
 - **Exact assertions.** Check the value, not just that something came back. Check the error type or message, not just that something failed.
 - **Independent tests.** No shared state, no order between tests. Each test sets up what it needs.
 - **Deterministic.** Fix the clock, seed the randomness. No `sleep` to wait for something; wait for the condition.
+- **Existing tests stay.** Don't change or delete a test to make it pass unless the behavior it checks was meant to change. Say so in the reply.
 
 ## Check before you finish
 
 - Run the new tests and the ones near them. They pass.
 - Break the code under test for a moment, or recall the bug the test is for. The test fails. A test that can't fail is deleted.
-- Don't change or delete an existing test to make it pass unless the behavior it checks was meant to change. Say so in the reply.

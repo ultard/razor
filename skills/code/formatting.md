@@ -47,13 +47,15 @@ For HTML, JSX, Vue and Svelte templates.
 
 ## Check
 
-After formatting, go through every rule above and look for a place in the result that breaks it, and fix it. Leave a rule broken only when the fix would change behavior, and say which rule and why. "It handles a distinct case" is not a reason: a distinct case is what an early return or a separate function is for.
+Before you reply, check the code you wrote or changed against every rule above and fix each place that breaks one. Four things are easy to miss, so look for each of them:
+
+- The deepest nesting: the function and its levels.
+- Every number and character code left without a name.
+- Every `else if` or `else` after a branch that could have ended with `return`, `continue` or `throw`.
+- Every short block split over several lines.
+
+Leave a rule broken only when the fix would change behavior, and name the rule and the reason in the reply. "It handles a distinct case" is not a reason: a distinct case is what an early return or a separate function is for.
+
+When the task itself is to format or clean up code, put the four items in the reply, each with what you left and why.
 
 Code you moved into a new function must still compile. Check what the moved code used from its old place: captured variables, the receiver object and its lifetime. Take parameter types from the code, not from a guess.
-
-In the reply, give evidence for the rules that are easy to skip:
-
-- The deepest nesting in the result: the function and its levels.
-- Every number and character code left in the code, and why it has no name.
-- Every `else if` or `else` after a branch that could have ended with `return`, `continue` or `throw`.
-- Every short block split over several lines, and why it doesn't fit on one.

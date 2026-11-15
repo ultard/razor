@@ -24,8 +24,8 @@ In both cases trace the real flow: where data comes in, what is stored, what goe
 - **Scale.** Fine for one user, wrong for many: check-then-write races, the same work done by every process, memory that only grows, a query per item, O(n^2) on big input.
 - **Missing test.** Risky logic (a branch, a parser, money, security, data writes, a bug fix) with no test that fails when it breaks. One good test, not coverage.
 - **Speed.** Big slowdowns are problems. Small wins are suggestions.
-- **Formatting.** Code that breaks the code skill's formatting rules (nested ternaries, deep nesting, unnamed big conditions) when the project's linter doesn't catch it. Goes under Nice to have.
 - **Lean.** Dead code, unused options and config, speculative features. A helper the repository already has. What the standard library or platform already does, or a dependency for a few lines. An interface with one implementation, a wrapper that only passes calls through. Near-copies that must change together. A function doing several unrelated jobs: split by job, never by line count.
+- **Formatting.** Code that breaks the code skill's formatting rules (nested ternaries, deep nesting, unnamed big conditions) when the project's linter doesn't catch it.
 
 ## Check before you report
 
@@ -45,7 +45,7 @@ Then the findings in three groups, skipping empty ones:
 
 - **Must fix.** Bug, security, data loss, breaks at the expected load.
 - **Should fix.** Risky code without a test, real slowness, duplication, code that shouldn't exist.
-- **Nice to have.** Small speed-ups, shorter forms.
+- **Nice to have.** Small speed-ups, shorter forms, formatting.
 
 Number findings across all groups so the user can say "fix 2 and 5". For a repository, give at most 20 and say how many smaller ones you left out. Each finding has four parts of one or two sentences:
 

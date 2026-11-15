@@ -15,13 +15,11 @@ Find the stack, the styling system, the component library, the tokens and a scre
 
 Without a reference, go to step 4. With one, follow [reference.md](reference.md). It covers images, live sites, Figma files, single effects and animations.
 
-Then write a short note of what you saw, with numbers. The user reads it and corrects you before you build on a wrong reading.
+Then write the user a short note of what you saw, with numbers, so they can correct a wrong reading. Mark each value as measured or estimated. Don't wait for an answer.
 
 - **Look.** "Calm: 18px text at 1.6 line height in a 680px column, two colors, no shadows." Not "modern and clean", which gives no direction.
 - **Effect.** The layers in paint order and what each one does. "A gradient 1500px wide in a 1440px viewport so its edges never show, under a 50px blur, under a noise texture at 4% opacity."
 - **Motion.** One line per animation: what moves, what triggers it, which properties change from what to what, duration, easing, delay and stagger, what happens at the end. "Cards: on entering the viewport, opacity 0 to 1 and translateY 24px to 0, 600 ms, ease-out, 80 ms stagger, plays once." Not "cards fade in smoothly".
-
-Mark each value as measured or estimated.
 
 ## 3. Decide what to take
 

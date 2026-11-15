@@ -1,6 +1,6 @@
 ---
 name: writing
-description: Use when writing or editing any text a person reads: replies, messages, docs, pull requests.
+description: Use when writing or editing any text a person reads, such as replies, messages, docs and pull requests.
 ---
 
 # Writing
