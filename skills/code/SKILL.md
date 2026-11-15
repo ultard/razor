@@ -29,7 +29,7 @@ Take the first option that fully works:
 
 ## Rules
 
-- Keep the layers, interfaces and conventions the codebase already has.
+- Keep the layers, interfaces and conventions the codebase already has, unless the user asked to refactor or improve them. If you copy a pattern that looks wrong, say so in one line at the end; don't fix it unasked.
 - Prefer deleting code to adding it.
 - Bug fix: grep every caller of the function first, then fix the root cause once in the shared code.
 - Moved or merged code keeps its error handling and validation.
@@ -43,3 +43,13 @@ Take the first option that fully works:
 
 Never cut validation at trust boundaries, error handling that prevents data loss, security, accessibility, or anything the user asked for.
 
+## Refactoring
+
+When the user asks to refactor, clean up or rewrite code, the existing patterns in that scope are what you change, not what you follow.
+
+- Stay inside the scope the user named. Leave the rest of the codebase as it is.
+- Before a large change, state the target pattern in a few lines: what replaces what. Agree on it first if the change is wide.
+- Finish the switch inside the scope. Don't leave half the code on the old pattern and half on the new one.
+- Behavior stays the same. If there are no tests, write a few that pin the current behavior first.
+- Keep public interfaces unless asked. If one must change, update every caller.
+- At the end, list what you replaced and where the old pattern still lives outside the scope.

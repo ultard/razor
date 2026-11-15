@@ -18,6 +18,7 @@ A doc exists for a reader who has to do something: install, run, call, fix or de
 - **No empty sections.** No Contributing, Support, Roadmap or FAQ without real content. A license is one line with a link.
 - **One way to do it.** Show the main install method, not every package manager.
 - **Say it once.** Link instead of repeating. Edit an existing page instead of writing a second one on the same topic.
+- **Define ambiguous terms.** When related concepts are easy to confuse, define their terms in a glossary and use them consistently in prose, diagrams, examples and alias placeholders. Reuse an existing glossary; otherwise put it in the document. Give different structural levels distinct names.
 
 ## Where each fact goes
 
@@ -86,4 +87,5 @@ Write what changed for the user and what they must do to upgrade. Skip refactors
 - The doc is within its size limit.
 - Nothing describes status, plans or history.
 - Every command was run or matches the code.
+- Each concept has one term throughout the document set, including diagrams, examples and alias placeholders; each term has one meaning.
 - In a spec, every page has the same sections and level of detail, and nothing goes past the scope the user set.

@@ -20,7 +20,7 @@ Each rule describes what a phrase does, not which words it uses. Find the same p
 - **Inflated vocabulary.** Words that sound important but say nothing: crucial, delve, seamless, showcase, landscape. Use the plain word or cut. "use" over "utilize", "check" over "perform a check".
 - **Fancy ways to say "is".** "serves as", "stands as", "boasts". Write "is" or "has".
 - **Abstract metaphor nouns.** substrate, vector, paradigm, surface, scaffolding, north star, ecosystem. Use the concrete word.
-- **Synonym cycling.** Pick one word for a thing and repeat it.
+- **Terminology.** Use one term for each concept and a distinct term for each different concept. Follow the project's glossary and established names. Don't alternate synonyms for variety or reuse a term for related concepts at different levels.
 - **Filler phrases.** "in order to" is "to", "due to the fact that" is "because". Delete "it is important to note that".
 - **Adverbs.** Use a stronger verb or a number instead.
 - **Hedging.** One hedge at most.
