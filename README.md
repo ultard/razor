@@ -1,19 +1,8 @@
 # Razor
 
-A plugin for Claude Code and Codex with skills that stop models from writing more than the task needs: extra code, padded docs, filler text.
+Skills for Claude Code and Codex that make agents write plainly and code carefully.
 
-- `code` keeps changes small and readable.
-- `tests` writes tests that catch real bugs.
-- `debug` finds the cause of a bug before fixing it.
-- `review` finds bugs, risks and code that can go.
-- `docs` writes short docs and specs with the same shape on every page.
-- `commits` matches the repository's commit style.
-- `interface` designs and builds interfaces that fit the product.
-- `writing` removes AI patterns from any text.
-
-A hook adds a short guide at the start of each session and each subagent, so the model knows which skill to load. The hook needs Node.js.
-
-## Installing
+## Install
 
 ### Claude Code
 
@@ -29,4 +18,19 @@ codex plugin marketplace add ultard/razor
 codex plugin add razor@razor
 ```
 
-In Codex the skills work, but the hook may not run until you approve it.
+## Skills
+
+`writing`
+`docs`
+`commits`
+`code`
+`web`
+`tests`
+`debug`
+`review`
+
+The writing rules are always on. The other skills load when the task needs them.
+
+## Style
+
+My own code style on top of Razor. Optional, install it as `razor-style@razor`.

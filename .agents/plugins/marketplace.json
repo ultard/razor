@@ -5,7 +5,19 @@
       "name": "razor",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/razor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "razor-style",
+      "source": {
+        "source": "local",
+        "path": "./plugins/razor-style"
       },
       "policy": {
         "installation": "AVAILABLE",

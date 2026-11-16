@@ -1,0 +1,21 @@
+{
+  "description": "Razor: add the writing rules and the skill guide to every session and subagent",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/inject.mjs\" writing" },
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/inject.mjs\" routing" }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/inject.mjs\" writing" },
+          { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/inject.mjs\" routing" }
+        ]
+      }
+    ]
+  }
+}

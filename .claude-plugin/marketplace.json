@@ -1,13 +1,19 @@
 {
   "name": "razor",
+  "description": "Skills that make agents write plainly and code carefully",
   "owner": {
     "name": "ultard"
   },
   "plugins": [
     {
       "name": "razor",
-      "source": "./",
-      "description": "Skills that make models write less and better."
+      "source": "./plugins/razor",
+      "description": "Skills that make agents write plainly and code carefully"
+    },
+    {
+      "name": "razor-style",
+      "source": "./plugins/razor-style",
+      "description": "My own code style on top of Razor"
     }
   ]
 }
