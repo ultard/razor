@@ -1,11 +1,11 @@
 ---
 name: web
-description: How to write web frontend code: markup, components, and CSS. Use together with razor:code whenever you write or change HTML, JSX, Vue or Svelte templates, UI components, or stylesheets. Covers code structure, not visual design.
+description: Structure of web frontend code.
 ---
 
 # Web
 
-These rules add to the code skill for frontend work. They are about how the code is organized, not about how the page looks.
+These rules add to `razor-code:quality` for frontend work. They are about how the code is organized, not about how the page looks.
 
 ## Markup and components
 

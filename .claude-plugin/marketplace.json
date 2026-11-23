@@ -8,12 +8,22 @@
     {
       "name": "razor",
       "source": "./plugins/razor",
-      "description": "Skills that make agents write plainly and code carefully"
+      "description": "Plain writing and useful docs"
+    },
+    {
+      "name": "razor-code",
+      "source": "./plugins/razor-code",
+      "description": "Careful code, from the first change to the pull request"
+    },
+    {
+      "name": "razor-design",
+      "source": "./plugins/razor-design",
+      "description": "Interface design without templated AI defaults"
     },
     {
       "name": "razor-style",
       "source": "./plugins/razor-style",
-      "description": "My own code style on top of Razor"
+      "description": "Personal rules on top of razor"
     }
   ]
 }

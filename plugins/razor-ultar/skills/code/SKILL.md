@@ -1,11 +1,11 @@
 ---
 name: code
-description: The user's personal code style on top of razor:code. Use together with razor:code whenever you write, edit, or format code. Covers blank lines, the order of imports, line length, nesting depth, and the shape of blocks.
+description: The user's personal code style.
 ---
 
 # Code style
 
-These rules add to the `razor:code` skill and win over it where they differ. The project's own rules win over both: if the project's `CLAUDE.md`, `AGENTS.md`, linter, or formatter config says otherwise, follow the project.
+These rules add to the `razor-code:quality` skill and win over it where they differ. The project's own rules win over both: if the project's `CLAUDE.md`, `AGENTS.md`, linter, or formatter config says otherwise, follow the project.
 
 ## Blank lines
 

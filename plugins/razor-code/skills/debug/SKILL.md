@@ -1,6 +1,6 @@
 ---
 name: debug
-description: How to find and fix the cause of a bug. Use when something fails, crashes, returns a wrong result, worked before and stopped, fails only sometimes or only in production, or when a test fails and the reason isn't obvious.
+description: Finding and fixing the cause of a bug instead of hiding the symptom.
 ---
 
 # Debug
@@ -17,7 +17,7 @@ Find the first place where the program does something wrong, fix it there, and p
 
 4. **Make it fail on demand.** Find the steps or the input that trigger the bug every time. Without a reproduction you can't tell whether a fix works.
 5. **Make the reproduction small.** Cut the input, the steps, and the setup until removing anything else makes the bug go away.
-6. **Turn it into a failing test** when the project has tests (see the tests skill). It proves the bug now and guards against it later.
+6. **Turn it into a failing test** when the project has tests (see `razor-code:tests`). It proves the bug now and guards against it later.
 
 ## Find the cause
 

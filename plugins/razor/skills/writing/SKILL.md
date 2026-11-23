@@ -1,6 +1,6 @@
 ---
 name: writing
-description: How to write any text a person will read, in any language. Use for replies to the user, code comments, docs, commit messages, PR and issue text, and when the user asks to clean up, rewrite, or "unslop" a text.
+description: Plain, direct writing in any language, without AI slop.
 ---
 
 # Writing

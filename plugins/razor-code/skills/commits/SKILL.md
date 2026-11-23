@@ -1,11 +1,11 @@
 ---
 name: commits
-description: How to commit with git, split work into commits, name branches, and write commit messages and pull request descriptions. Use whenever you commit, create a branch, open or update a PR, or the user asks for a commit message or PR text.
+description: Clean git history with clear commit and pull request text.
 ---
 
 # Commits
 
-The writing skill applies to every commit message and PR description. This skill adds the format and the git rules.
+`razor:writing` applies to every commit message and PR description. This skill adds the format and the git rules.
 
 ## Before you start
 

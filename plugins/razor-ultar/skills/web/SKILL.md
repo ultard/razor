@@ -1,11 +1,11 @@
 ---
 name: web
-description: The user's personal style for web frontends, on top of razor:web. Use whenever you write or change styles, markup, or UI components for the web, or choose how a web project handles CSS.
+description: The user's personal frontend style.
 ---
 
 # Web style
 
-These rules add to `razor:web` and the other Razor skills and win over them where they differ. The project's own setup wins over both.
+These rules add to `razor-code:web` and the other Razor skills and win over them where they differ. The project's own setup wins over both.
 
 ## Tailwind
 

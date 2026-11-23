@@ -1,6 +1,6 @@
 ---
 name: tests
-description: When and how to write tests that catch real bugs. Use when you add or change behavior in a project that has tests, fix a bug, write or fix tests, deal with flaky tests, or write end-to-end and UI tests.
+description: Tests that catch real bugs.
 ---
 
 # Tests

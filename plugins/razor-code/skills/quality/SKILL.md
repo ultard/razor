@@ -1,11 +1,11 @@
 ---
 name: code
-description: How to write and change code in any language. Use whenever you write, edit, or refactor code, and when the user asks to clean up AI slop in code. Covers how to make a change, code quality, error handling, input validation, and security.
+description: Careful code changes in any language.
 ---
 
 # Code
 
-Comments and docstrings follow the docs skill. Tests, debugging, and review have their own skills.
+Docs such as READMEs and guides are covered by `razor:docs`. Tests, debugging, review, and commits have their own skills in razor-code.
 
 ## Before you change code
 
@@ -65,15 +65,27 @@ Comments and docstrings follow the docs skill. Tests, debugging, and review have
 39. **Don't turn off protection to make something work.** No disabled TLS verification, no `Access-Control-Allow-Origin: *` on an API with credentials, no disabled CSRF checks. Fix the real problem or ask.
 40. **No homemade crypto.** Use the platform's or a well-known library's functions for hashing passwords, encryption, tokens, and random values. Use a cryptographically secure random generator for anything secret.
 
+## Comments
+
+41. **No comment by default.** Good names and simple code say what the code does. Before you write a comment that explains what code does, try a clearer name or a smaller function.
+42. **Comment the why.** Write a comment when the reader can't get the reason from the code: a constraint from outside ("the API returns at most 100 items"), a workaround with a link to the issue, an order that matters, a value chosen on purpose, behavior that looks wrong but isn't.
+43. **No comments that repeat the code.** `// increment i`, `// loop over users`, `// constructor`. Delete them.
+44. **No change notes in comments.** "// fixed bug", "// added for ticket 123", "// new version", "// changed from X". The comment describes the code as it is; git describes how it changed.
+45. **No commented-out code.** Delete it. Git keeps it.
+46. **TODO says what and why.** `// TODO: retry on 429 once the client supports backoff` is useful. `// TODO: fix` is not.
+47. **Docstrings for public functions and types:** what it does, what each parameter means when the name and type don't make it clear, what it returns, what it throws, and side effects. Don't repeat the types the signature already shows.
+48. **Keep comments true.** When you change code, read the comments around it and update or delete the ones that no longer match. A wrong comment is worse than none.
+49. **Match the file.** Follow the comment style, language, and docstring format already used in the file and the project.
+
 ## AI slop in code
 
 Code written by a model has its own tells. Avoid them when you write, and remove them when the user asks you to clean code up.
 
-41. **The tells:**
+50. **The tells:**
     - `try`/`catch` and null checks around code that can't fail or data that was already checked
     - fallback values that hide missing data (`?? ''`, `|| []`, `.get(key, {})`)
     - `as any`, casts, and ignore comments that silence the type checker
-    - comments that repeat the code or narrate the change (see the docs skill)
+    - comments that repeat the code or narrate the change (see Comments above)
     - a new helper that duplicates one the project already has
     - options, parameters, and config nobody uses
     - wrappers, factories, and interfaces with one user
@@ -81,7 +93,7 @@ Code written by a model has its own tells. Avoid them when you write, and remove
     - names much longer than the codebase's usual names (`userAccountDataResponseObject`)
     - leftover `console.log`, debug prints, and unused imports
     - code that looks different from the rest of the file
-42. **How to clean up.** When the user asks to remove slop, look at the diff against the main branch, or at the files the user named. Keep behavior the same unless you find a clear bug, and report any bug you fix. Make small, local edits, not a rewrite. Removing a parameter changes the function's API: remove an unused one only when you can see every caller, and say that you did. In the summary, say in a few sentences what you removed.
+51. **How to clean up.** When the user asks to remove slop, look at the diff against the main branch, or at the files the user named. Keep behavior the same unless you find a clear bug, and report any bug you fix. Make small, local edits, not a rewrite. Removing a parameter changes the function's API: remove an unused one only when you can see every caller, and say that you did. In the summary, say in a few sentences what you removed.
 
 ## Before you finish
 
