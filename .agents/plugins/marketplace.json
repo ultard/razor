@@ -38,10 +38,10 @@
       "category": "Developer Tools"
     },
     {
-      "name": "razor-style",
+      "name": "razor-ultar",
       "source": {
         "source": "local",
-        "path": "./plugins/razor-style"
+        "path": "./plugins/razor-ultar"
       },
       "policy": {
         "installation": "AVAILABLE",

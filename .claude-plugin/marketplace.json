@@ -21,8 +21,8 @@
       "description": "Interface design without templated AI defaults"
     },
     {
-      "name": "razor-style",
-      "source": "./plugins/razor-style",
+      "name": "razor-ultar",
+      "source": "./plugins/razor-ultar",
       "description": "Personal rules on top of razor"
     }
   ]
