@@ -1,0 +1,27 @@
+{
+  "description": "Reminds a new chat or subagent which Razor skills to load",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/remind.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/remind.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

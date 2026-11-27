@@ -13,17 +13,26 @@
     {
       "name": "razor-code",
       "source": "./plugins/razor-code",
-      "description": "Careful code, from the first change to the pull request"
+      "description": "Careful code, from the first change to the pull request",
+      "dependencies": [
+        "razor"
+      ]
     },
     {
       "name": "razor-design",
       "source": "./plugins/razor-design",
-      "description": "Interface design without templated AI defaults"
+      "description": "Interface design without templated AI defaults",
+      "dependencies": [
+        "razor"
+      ]
     },
     {
       "name": "razor-ultar",
       "source": "./plugins/razor-ultar",
-      "description": "Personal rules on top of razor"
+      "description": "Personal rules on top of razor",
+      "dependencies": [
+        "razor"
+      ]
     }
   ]
 }
