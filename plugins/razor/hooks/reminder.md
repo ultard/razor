@@ -7,6 +7,7 @@ From razor:
 
 From razor-code:
 
+- `razor-code:architecture` before you design a new project, service, or large feature, or restructure an existing one.
 - `razor-code:quality` before you write or change code in any language.
 - `razor-code:web` as well, when the code is web frontend: HTML, CSS, JSX, Vue, or Svelte.
 - `razor-code:tests` before you write or change tests.

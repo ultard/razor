@@ -5,7 +5,7 @@ description: Careful code changes in any language.
 
 # Code
 
-Docs such as READMEs and guides are covered by `razor:docs`. Tests, debugging, review, and commits have their own skills in razor-code.
+Docs such as READMEs and guides are covered by `razor:docs`. Project structure, tests, debugging, review, and commits have their own skills in razor-code.
 
 ## Before you change code
 
